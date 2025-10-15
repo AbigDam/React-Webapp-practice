@@ -31,6 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"] #Add Hostname once its deployed
 
+AUTH_USER_MODEL = 'scheduler.User'
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',

@@ -9,5 +9,5 @@ urlpatterns = [
     path("scheduler/token/", TokenObtainPairView.as_view(), name="get_token"),
     path("scheduler/token/refresh/", TokenRefreshView.as_view(), name="refresh"),
     path("scheduler-auth/", include("rest_framework.urls")),
-    #path("scheduler/", include("scheduler.urls")),
+    path("scheduler/", include("scheduler.urls")),
 ]
